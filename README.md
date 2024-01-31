@@ -2,6 +2,7 @@
 
 * The program will prompt the user to enter the secret_key and the message to be encrypted in the provided image. Also, it can decrypt the message given the key from image data. It automatically saves decrypted message to text file.
 * The program is capable of hiding and finding a short encrypted message inside a given image.
+* Used the Pillow library (an active fork of the Python Imaging Library) to read the pixel values from an existng image file, modify them to encrypt a secret message, and save the modified values to a new image file.
 
 ## Program Mode
 * If the user enters ‘encrypt’ or ‘decrypt’, the program proceeds with asking the user to type in the filename of the image to be used. If the filename points to a file that either doesn’t exist or isn’t the right format (not a JPEG file: .jpg or ,jpeg), the program shows the message ‘Invalid image file’ and will repeatedly prompt the user to enter a new filename until a valid file is found.
